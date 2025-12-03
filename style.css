@@ -1,18 +1,17 @@
 body {
-    /* Dein Bild als Hintergrund */
-    background-image: url('momo-bild.jpg'); 
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed; /* Hintergrund bleibt beim Scrollen fixiert */
-    color: #fff; /* Weiße Textfarbe */
+    /* Hintergrundfarbe auf helles Gelb setzen */
+    background-color: #FFFACD; /* Lemon Chiffon (sehr helles Gelb) */
+    /* Hintergrundbild entfernen */
+    background-image: none; 
+    color: #333; /* Dunkelbrauner Text für Lesbarkeit */
     font-family: sans-serif;
     margin: 0;
     padding: 0;
 }
 
 .overlay {
-    /* Dunkle, leicht transparente Ebene über dem Bild für bessere Lesbarkeit */
-    background-color: rgba(0, 0, 0, 0.6); 
+    /* Kein Overlay mehr nötig, da der Hintergrund hell ist */
+    background-color: transparent; 
     min-height: 100vh;
     padding: 20px;
 }
@@ -20,7 +19,8 @@ body {
 h1 {
     text-align: center;
     margin-bottom: 30px;
-    text-shadow: 2px 2px 4px #000;
+    color: #8B4513; /* Dunkelbraun für die Überschrift */
+    text-shadow: none;
 }
 
 .data-container {
@@ -32,12 +32,13 @@ h1 {
 }
 
 section {
-    background-color: rgba(100, 50, 0, 0.85); /* Dunkelorange/Braune Box */
+    /* Hauptboxenfarbe (hellbraun/beige) */
+    background-color: #F5DEB3; /* Wheat */
     padding: 20px;
     margin: 15px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    flex: 1 1 45%; /* Flexibler Layout-Anteil */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex: 1 1 45%; 
     min-width: 300px;
 }
 
@@ -47,7 +48,7 @@ section {
     font-weight: bold;
 }
 .live-card span {
-    color: #ffcc00; /* Leuchtend gelb für Werte */
+    color: #CD853F; /* Helles Braun/Orange für Werte */
 }
 
 /* DURCHSCHNITTSWERTE (Tabelle) */
@@ -59,13 +60,14 @@ table {
 th, td {
     padding: 10px;
     text-align: left;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(139, 69, 19, 0.3); /* Dunklere Linie */
 }
 th {
-    background-color: rgba(130, 70, 0, 0.9);
+    background-color: #D2B48C; /* Helleres Braun für den Tabellenkopf */
+    color: #333;
 }
 #temp-day-avg, #hum-day-avg, #temp-night-avg, #hum-night-avg {
-    color: #ffcc00; 
+    color: #CD853F; 
     font-weight: bold;
 }
 
@@ -73,5 +75,5 @@ th {
     text-align: center;
     margin-top: 50px;
     font-size: 0.8em;
-    color: rgba(255, 255, 255, 0.7);
+    color: #8B4513; /* Dunkelbrauner Footer-Text */
 }
