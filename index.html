@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momo's Klima-Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="overlay">
+        <h1>🐢 Momo's Heimklima-Monitor</h1>
+        
+        <div class="data-container">
+            <section class="live-data">
+                <h2>Aktuelle Werte</h2>
+                <div class="live-card">
+                    <p>Temperatur: <span id="temp-live">--.- °C</span></p>
+                    <p>Luftfeuchte: <span id="hum-live">--.- %</span></p>
+                </div>
+            </section>
+
+            <section class="average-data">
+                <h2>Durchschnitt (Letzte 7 Tage)</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Temperatur Ø</th>
+                            <th>Luftfeuchte Ø</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Tag (08:00 - 20:00)</td>
+                            <td id="temp-day-avg">--.- °C</td>
+                            <td id="hum-day-avg">--.- %</td>
+                        </tr>
+                        <tr>
+                            <td>Nacht (20:00 - 08:00)</td>
+                            <td id="temp-night-avg">--.- °C</td>
+                            <td id="hum-night-avg">--.- %</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+        <p class="footer">Daten-Update: <span id="last-updated">--:--:--</span></p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
