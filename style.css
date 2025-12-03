@@ -1,0 +1,77 @@
+body {
+    /* Dein Bild als Hintergrund */
+    background-image: url('momo-bild.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Hintergrund bleibt beim Scrollen fixiert */
+    color: #fff; /* Weiße Textfarbe */
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.overlay {
+    /* Dunkle, leicht transparente Ebene über dem Bild für bessere Lesbarkeit */
+    background-color: rgba(0, 0, 0, 0.6); 
+    min-height: 100vh;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.data-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    background-color: rgba(100, 50, 0, 0.85); /* Dunkelorange/Braune Box */
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    flex: 1 1 45%; /* Flexibler Layout-Anteil */
+    min-width: 300px;
+}
+
+/* LIVE-WERTE */
+.live-card p {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.live-card span {
+    color: #ffcc00; /* Leuchtend gelb für Werte */
+}
+
+/* DURCHSCHNITTSWERTE (Tabelle) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+th {
+    background-color: rgba(130, 70, 0, 0.9);
+}
+#temp-day-avg, #hum-day-avg, #temp-night-avg, #hum-night-avg {
+    color: #ffcc00; 
+    font-weight: bold;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 0.8em;
+    color: rgba(255, 255, 255, 0.7);
+}
